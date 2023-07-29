@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+  }
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.profileColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pgColumn {
+    display: flex;
+}
+
+.profilePic {
+    border-radius: 100%;
+    max-width: 400px;
+}
+
+
+::selection{
+  background: rgba(187, 134, 252, 0.5);
+  color: #FFF;
+}
+
+.container{
+  max-width: 1100px;
+  width: 100vw;
+  /* padding: 50px 40px; */
+  /* margin: 0px 20px; */
+  border-radius: 12px;
+  /* background: #22272C; */
+  /* box-shadow: 0px 4px 16px rgba(254, 205, 211, 0.1), 0px 8px 24px rgba(254, 205, 211, 0.1), 0px 16px 56px rgba(254, 205, 211, 0.1); */
+}
+
+.topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content input{
+  display: none;
+}
+
+.content{
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.content .list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  margin: 20px;
+  align-items: center;
+  height: fit-content;
+  position: sticky;
+}
+
+.content .list label{
+  width: inherit;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  /* padding-left: 25px; */
+  transition: all 0.5s ease;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#Home:checked ~ .list label.Home,
+#Research:checked ~ .list label.Research,
+#Teaching:checked ~ .list label.Teaching,
+#Fieldwork:checked ~ .list label.Fieldwork,
+#Outreach:checked ~ .list label.Outreach{
+  color: #22272C;
+}
+
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 60px;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  
+  background: #BB86FC;
+}
+
+#Home:checked ~ .list .slider{
+  top: 60;
+}
+
+#Research:checked ~ .list .slider{
+  top: 120px;
+}
+
+#Teaching:checked ~ .list .slider{
+  top: 180px;
+}
+
+#Fieldwork:checked ~ .list .slider{
+  top: 240px;
+}
+
+#Outreach:checked ~ .list .slider{
+  top: 300px;
+}
+
+#Contact:checked ~ .list .slider{
+  top: 360px;
+}
+
+.content .text-content{
+  width: 80%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  overflow: auto;
+}
+
+.content .text{
+  display: none;
+}
+
+.content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.text p{
+  text-align: justify;
+}
+
+.content .text-content .Home{
+  display: block;
+}
+
+#Home:checked ~ .text-content .Home,
+#Research:checked ~ .text-content .Research,
+#Teaching:checked ~ .text-content .Teaching,
+#Fieldwork:checked ~ .text-content .Fieldwork,
+#Contact:checked ~ .text-content .Contact,
+#Outreach:checked ~ .text-content .Outreach{
+  display: block;
+}
+
+#Research:checked ~ .text-content .Home,
+#Teaching:checked ~ .text-content .Home,
+#Fieldwork:checked ~ .text-content .Home,
+#Contact:checked ~ .text-content .Home,
+#Outreach:checked ~ .text-content .Home{
+  display: none;
+}
+/* #Research:checked ~ .text-content .Research,
+#Teaching:checked ~ .text-content .Research,
+#Fieldwork:checked ~ .text-content .Research,
+#Contact:checked ~ .text-content .Research,
+#Outreach:checked ~ .text-content .Research{
+  display: none;
+} */
+
+.content .list label:hover{
+  color: #BB86FC;
+}

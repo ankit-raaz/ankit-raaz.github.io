@@ -1,110 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Ankit Raj - Website</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color:#181817;
-      color:white;
-    }
-    header {
-      background-color: #0099cc;
-      color: white;
-      padding: 20px;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    nav li:last-child {
-      margin-right: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-    }
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
-    }
-    h1 {
-      margin-top: 20px;
-      font-size: 2.5rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    dl {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-      margin-bottom: 20px;
-    }
-    dt {
-      font-weight: bold;
-    }
-    dd {
-      margin-left: 0;
-    }
-    footer {
-      background-color:brown;
-      color: rgb(21, 19, 19);
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./google.css">
+
+    <!-- js -->
+    <script src="./main.js"></script>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Publications</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <img class="profile-img" src="ankit-raaz/ankit-raaz.github.io/image.png" alt="Ankit Raj">
-    <h1>Ankit Raj</h1>
-    <p>Final Year BS-MS Student</p>
-    <h2>About Me</h2>
-    <p>I am working in <a href="https://sites.google.com/site/subhronilindia/Home?authuser=0">Paleobiology lab</a>. My research focuses on understanding the evolution of dinosaurs and their ecosystems, using a combination of fossil evidence and modern techniques.</p>
-    <h2>Education</h2>
-    
-     <p> Master's Degree in Geolgical Sciences (May 2023)</p>
-      <h3>Indian Institute of Science Education and Research Kolkata</h3>
-       
-    
+    <div class="container">
+
+        <div class="content">
+
+            <input onclick="checkSelectedOption()" type="radio" name="slider" checked id="Home">
+            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Research">
+            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Teaching">
+            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Fieldwork">
+            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Outreach">
+            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Contact">
+
+            <div class="list">
+                <div style="height: 60px;"></div>
+                <label for="Home" class="Home">
+                    <span>Home</span>
+                </label>
+                <label for="Research" class="Research">
+                    <span>Research</span>
+                </label>
+                <label for="Teaching" class="Teaching">
+                    <span>Teaching</span>
+                </label>
+                <label for="Fieldwork" class="Fieldwork">
+                    <span>Fieldwork</span>
+                </label>
+                <label for="Outreach" class="Outreach">
+                    <span>Outreach</span>
+                </label>
+                <label for="Contact" class="Contact">
+                    <span>Contact</span>
+                </label>
+                <div class="slider"></div>
+            </div>
+
+            <div class="text-content">
+                <div style="height: 60px;"></div>
+
+                <div class="Home text">
+                    <!-- side wala profile column -->
+                    <div class="profileColumn">
+                        <img src="./me.jpg" alt="ankit raj profile image" class="profilePic">
+                        <name style="font-size: 2.8rem;font-weight: 800;">Ankit Raj</name>
+                        <!-- <br> -->
+                        <h3 style="text-align: center;">
+                            Paleobiology lab
+                            <br>
+                            Indian Institute of Science Education and Research Koklata
+                        </h3>
+                        <br>
+                        <div>
+                            <p>
+                                Hi, I am a postgraduate student, I am interested in understanding the patterns in
+                                Paleoecology and the driving processes. During my MS Project, I tried to understand
+                                the patterns of ecological diversification in Marine invertebrates in the aftermath
+                                of the Permian- Triassic mass extinction and in the advent of Marine Mesozoic
+                                Revolution (MMR). Apart from this, I have keen interest in Conservation
+                                Paleobiology.
+                                <br>
+                                When I am not in the lab or fieldwork, you would find me on the Athletics ground, in
+                                the drama room, dance club or sharing my passion for Geology to the general public
+                                in Outreach events.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Research text">
+                    <div class="title">Research</div>
+                    <p class="c4"><span class="c2">Work in Paleobiology Lab: </span></p>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4"><span class="c0">Patterns of Ecospace Utilization in Marine Invertebrates During the
+                            &nbsp;Mesozoic</span></p>
+                    <p class="c4"><span class="c6">Constructed a multivariate ecospace with functional traits. &nbsp;
+                        </span></p>
+                    <p class="c4"><span class="c6">Simulated theoretical mesozoic invertebrates&rsquo; ecospace
+                            according to general
+                            models of ecological diversification- Non driven model: neutral model, driven Model:
+                            redundancy,
+                            partitioning and expansion model, calculated functional diversity metrics to for each models
+                            and used
+                            machine learning to classify which model best explains the empirical patterns in the
+                            Mesozoic. After finding
+                            the patterns I tried to correlate with causal processes behind.</span></p>
+                    <ul class="c11 lst-kix_2f7igc6pfscr-0 start">
+                        <li class="c4 c10 li-bullet-0"><span class="c6">Manuscript is in preparation</span></li>
+                    </ul>
+                    <ul class="c11 lst-kix_5g9f8ldvlgcw-0 start">
+                        <li class="c4 c10 li-bullet-0"><span class="c6">R &nbsp;- Parallel computing &nbsp;- Machine
+                                learning
+                                &nbsp;</span></li>
+                    </ul>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4"><span class="c2">Work in Environmental Science:</span></p>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4"><span class="c6">&nbsp;Explored techniques to detect microplastics in oceans using
+                            Fourier Transform
+                            Infrared (FTIR) Spectroscopy and Near Infrared (NIR) spectroscopy.</span></p>
+                    <p class="c4"><span class="c6">Analyzed methods to develop highly concentrated suspensions of silver
+                            nanoparticles.</span></p>
+                    <p class="c4"><span class="c6">Used Inductively Coupled Plasma Mass Spectrometry for elemental
+                            identification.</span></p>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4"><span class="c5">Work in Quantum Computation: </span><span class="c6">&nbsp;</span>
+                    </p>
+                    <p class="c4"><span class="c6">Simulated Quantum Bomb Detection using IBM quantum computer.</span>
+                    </p>
+                    <p class="c4"><span class="c6">Designed a quantum circuit for Elitzur and Vaidman Experiment,
+                            interaction-free
+                            measurement.</span></p>
+                </div>
+                <div class="Teaching text">
+                    <div class="title">Teaching</div>
+                    <p class="c4"><span class="c6">&nbsp; &nbsp;Teaching Assistant, Paleontology laboratory; 3rd year
+                            course (11
+                            Students)</span></p>
+                    <p class="c4"><span class="c6">&nbsp; &nbsp;Teaching Assistant, Earth System Processes; 1st year
+                            course (200
+                            students)</span></p>
+                    <p class="c4"><span class="c6">&nbsp; &nbsp;Teaching Assistant, Earth and Planetary Sciences; 1st
+                            year course (200
+                            students)</span></p>
+                </div>
+                <div class="Fieldwork text">
+                    <div class="title">Field work</div>
+                    <p class="c4"><span class="c6">Paleontology and Stratigraphy fieldwork, West Coast of India </span>
+                    </p>
+                    <ul class="c11 lst-kix_lmyh5h5t6w8i-0 start">
+                        <li class="c4 c10 li-bullet-0"><span class="c6">Images Coral, bivalves </span></li>
+                    </ul>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4"><span class="c6">Structural Geology Fieldwork</span></p>
+                    <ul class="c11 lst-kix_f752dls82kkb-0 start">
+                        <li class="c4 c10 li-bullet-0"><span class="c6">Images </span></li>
+                    </ul>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                </div>
+                <div class="Outreach text">
+                    <div class="title">Outreach</div>
+                    <p class="c4"><span class="c6">25th Kalyani Book Fair (03-12-21 to 14-12-21) &nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                    <p class="c4"><span class="c6">Indian National Exhibition Cum Fair 2022, Patuli (04-08-22 to
+                            08-08-22) &nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </p>
+                    <p class="c4"><span class="c6">21st National Space Science Symposium (NSSS),Science City, Kolkata
+                            (6-12-22 to
+                            11-12-22) &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National Science Day
+                            (28-2-23)
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                </div>
+                <div class="Contact text">
+                    <div class="title">Contact</div>
+                    <p class="c4"><span class="c9"><a class="c7"
+                                href="mailto:ankitraj18ms210@iiserkol.ac.in">ankitraj18ms210@iiserkol.ac.in</a></span>
+                    </p>
+                    <p class="c4"><span class="c9"><a class="c7"
+                                href="mailto:ar18ms210@iiserkol.ac.in">ar18ms210@iiserkol.ac.in</a></span></p>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                    <p class="c4 c8"><span class="c6"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
