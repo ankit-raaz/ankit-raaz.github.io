@@ -1,192 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- css -->
+    <title>Ankit Raj - Paleontologist & Spatial Ecologist</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./google.css">
-
-    <!-- js -->
-    <script src="./main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="site-title">Ankit Raj</h1>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <div class="content">
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="name">Ankit Raj</h1>
+                <p class="title-desc">PhD Student | Spatial Ecology & Paleontology</p>
+                <p class="institution">Georgia Institute of Technology</p>
+                <div class="social-links">
+                    <a href="https://github.com/ankit-raaz" target="_blank" class="social-btn">GitHub</a>
+                    <a href="mailto:ankit.raj@gatech.edu" class="social-btn">Email</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./me.jpg" alt="Ankit Raj" class="profile-pic">
+            </div>
+        </div>
+    </section>
 
-            <input onclick="checkSelectedOption()" type="radio" name="slider" checked id="Home">
-            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Research">
-            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Teaching">
-            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Fieldwork">
-            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Outreach">
-            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Caving">
-            <input onclick="checkSelectedOption()" type="radio" name="slider" id="Contact">
-
-            <div class="list">
-                <div style="height: 60px;"></div>
-                <label for="Home" class="Home">
-                    <span>Home</span>
-                </label>
-                <label for="Research" class="Research">
-                    <span>Research</span>
-                </label>
-                <label for="Teaching" class="Teaching">
-                    <span>Teaching</span>
-                </label>
-                <label for="Fieldwork" class="Fieldwork">
-                    <span>Fieldwork</span>
-                </label>
-                <label for="Outreach" class="Outreach">
-                    <span>Outreach</span>
-                </label>
-                 <label for="Caving" class="Caving">
-                    <span>Caving</span>
-                </label>
-                <label for="Contact" class="Contact">
-                    <span>Contact</span>
-                </label>
-                <div class="slider"></div>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am a PhD student in Quantitative Biosciences at Georgia Tech, working in the Spatial Ecology & Paleontology Lab under the supervision of Dr. Jenny McGuire. My research integrates paleontology, fire ecology, and spatial analysis to understand how climate change and megafires reshape mammalian functional trait diversity and community structure over long temporal scales.</p>
                 
+                <p>My work combines paleofire data (charcoal records) with mammal fossil data to investigate trait-environment relationships, functional distance metrics, and ecological legacies from the Pleistocene to present. I use advanced computational approaches including R, Julia, and circuit theory modeling to analyze large spatial datasets.</p>
+
+                <h3>Research Interests</h3>
+                <ul class="interests">
+                    <li>Paleofire & Fire Ecology</li>
+                    <li>Mammalian Community Evolution</li>
+                    <li>Ecometrics & Trait-Environment Relationships</li>
+                    <li>Spatial Ecology & Connectivity Modeling</li>
+                    <li>Conservation Paleobiology</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2>Research Projects</h2>
+            
+            <div class="research-item">
+                <h3>Disruption in Trait-Environment Relationships in African Large Mammals</h3>
+                <p class="collaborators">With Dr. Jenny McGuire (Georgia Tech) & Dr. Michelle Lawing (Texas A&M)</p>
+                <p>Quantifying trait-environment relationships using ecometric modeling and evaluating point connectivity using Omniscape connectivity modeling. Developed novel methods for analyzing ecometric anomaly significance.</p>
             </div>
 
-            <div class="text-content">
-                <div style="height: 60px;"></div>
+            <div class="research-item">
+                <h3>Paleofire & Mammalian Functional Diversity</h3>
+                <p class="collaborators">Collaboration with University of Amsterdam & Aarhus University</p>
+                <p>Integrating paleofire database (charcoal records) with mammal fossil data from Neotoma to understand how megafires and climate change affect functional trait diversity across temporal and spatial scales.</p>
+            </div>
 
-                <div class="Home text">
-                    <!-- side wala profile column -->
-                    <div class="profileColumn">
-                        <img src="./me.jpg" alt="ankit raj profile image" class="profilePic">
-                        <name style="font-size: 2.8rem;font-weight: 800;">Ankit Raj</name>
-                        <!-- <br> -->
-                        <h3 style="text-align: center;">
-                            Paleobiology lab
-                            <br>
-                            Indian Institute of Science Education and Research Koklata
-                        </h3>
-                        <br>
-                        <div>
-                            <p>
-                                Hi, I am a postgraduate student, I am interested in understanding the patterns in
-                                Paleoecology and the driving processes. During my MS Project, I tried to understand
-                                the patterns of ecological diversification in Marine invertebrates in the aftermath
-                                of the Permian- Triassic mass extinction and in the advent of Marine Mesozoic
-                                Revolution (MMR). Apart from this, I have keen interest in Conservation
-                                Paleobiology.
-                                <br>
-                                When I am not in the lab or fieldwork, you would find me on the Athletics ground, in
-                                the drama room, dance club or sharing my passion for Geology to the general public
-                                in Outreach events.
+            <div class="research-item">
+                <h3>Patterns of Ecospace Utilization in Marine Invertebrates (MS Thesis)</h3>
+                <p class="collaborators">With Dr. Subhronil Mondal (IISER Kolkata) & Prof. Phillip Novack-Gottshall (Benedictine University)</p>
+                <p>Quantified ecological diversity using theoretical ecospace framework. Analyzed ecospace structuring in the aftermath of the Permian-Triassic mass extinction and during the Mesozoic Marine Revolution. Used machine learning to classify models of ecological diversification.</p>
+            </div>
+        </div>
+    </section>
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="Research text">
-                    <div class="title">Research</div>
-                    <p class="c4"><span class="c2">Work in Paleobiology Lab: </span></p>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4"><span class="c0">Patterns of Ecospace Utilization in Marine Invertebrates During the
-                            &nbsp;Mesozoic</span></p>
-                    <p class="c4"><span class="c6">Constructed a multivariate ecospace with functional traits. &nbsp;
-                        </span></p>
-                    <p class="c4"><span class="c6">Simulated theoretical mesozoic invertebrates&rsquo; ecospace
-                            according to general
-                            models of ecological diversification- Non driven model: neutral model, driven Model:
-                            redundancy,
-                            partitioning and expansion model, calculated functional diversity metrics to for each models
-                            and used
-                            machine learning to classify which model best explains the empirical patterns in the
-                            Mesozoic. After finding
-                            the patterns I tried to correlate with causal processes behind.</span></p>
-                    <ul class="c11 lst-kix_2f7igc6pfscr-0 start">
-                        <li class="c4 c10 li-bullet-0"><span class="c6">Manuscript is in preparation</span></li>
+    <section id="publications">
+        <div class="container">
+            <h2>Publications & Presentations</h2>
+            
+            <div class="pub-item">
+                <h4>Conference Presentations</h4>
+                <ul>
+                    <li><strong>2026</strong> - International Biogeography Society Conference, Aarhus, Denmark (Poster)</li>
+                    <li><strong>2025</strong> - Gordon Research Seminar & Conference, Ventura, California (Poster)</li>
+                    <li><strong>2025</strong> - Evolution Conference, Athens, Georgia</li>
+                </ul>
+            </div>
+
+            <div class="pub-item">
+                <h4>Workshops & Training</h4>
+                <ul>
+                    <li><strong>2025</strong> - Paleontological Fieldwork at Natural Trap Cave (Mammalia focus), Wyoming</li>
+                    <li><strong>2025</strong> - Paleobiology Database (PBDB) Workshop, George Mason University</li>
+                </ul>
+            </div>
+
+            <div class="pub-item">
+                <h4>Pre-prints</h4>
+                <ul>
+                    <li>Raj, A., Das, B., Behera, B.K., & Panigrahi, P.K. - Demonstration of Quantum Bomb Detection using IBM Quantum Computer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <div class="container">
+            <h2>Teaching Experience</h2>
+            
+            <div class="teaching-item">
+                <h4>Graduate Teaching Assistant - Georgia Institute of Technology</h4>
+                <ul>
+                    <li><strong>Fall 2025</strong> - Introduction to Environmental Sciences (3 sections, 66 students total)</li>
+                    <li><strong>Spring 2025</strong> - Earth Processes (19 students)</li>
+                    <li><strong>Fall 2024</strong> - Introduction to Environmental Science (22 students)</li>
+                </ul>
+            </div>
+
+            <div class="teaching-item">
+                <h4>Teaching Assistant - IISER Kolkata</h4>
+                <ul>
+                    <li><strong>2023</strong> - Paleontology Laboratory (3rd year, 11 students)</li>
+                    <li><strong>2023</strong> - Earth System Processes (1st year, 50 students)</li>
+                    <li><strong>2022</strong> - Earth and Planetary Sciences (1st year, 50 students)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership">
+        <div class="container">
+            <h2>Leadership & Service</h2>
+            <div class="leadership-grid">
+                <div class="leadership-item">
+                    <h4>Current Positions</h4>
+                    <ul>
+                        <li>Junior Executive, Student Government Association, QBioS (2025-present)</li>
+                        <li>Instructor in Training, Outdoor Recreation Georgia Tech - Caving (2025-present)</li>
                     </ul>
-                    <ul class="c11 lst-kix_5g9f8ldvlgcw-0 start">
-                        <li class="c4 c10 li-bullet-0"><span class="c6">R &nbsp;- Parallel computing &nbsp;- Machine
-                                learning
-                                &nbsp;</span></li>
+                </div>
+                <div class="leadership-item">
+                    <h4>Past Positions</h4>
+                    <ul>
+                        <li>General Secretary, Games & Sports Student Affairs Council, IISER Kolkata (2021-22, two tenures)</li>
+                        <li>Fest Coordinator, Tenacity - All-IISER Virtual Games & Sports Fest (2021)</li>
+                        <li>Founding Member, Earth - The Journal Club of Earth Sciences, IISER Kolkata (2022)</li>
                     </ul>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4"><span class="c2">Work in Environmental Science:</span></p>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4"><span class="c6">&nbsp;Explored techniques to detect microplastics in oceans using
-                            Fourier Transform
-                            Infrared (FTIR) Spectroscopy and Near Infrared (NIR) spectroscopy.</span></p>
-                    <p class="c4"><span class="c6">Analyzed methods to develop highly concentrated suspensions of silver
-                            nanoparticles.</span></p>
-                    <p class="c4"><span class="c6">Used Inductively Coupled Plasma Mass Spectrometry for elemental
-                            identification.</span></p>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4"><span class="c5">Work in Quantum Computation: </span><span class="c6">&nbsp;</span>
-                    </p>
-                    <p class="c4"><span class="c6">Simulated Quantum Bomb Detection using IBM quantum computer.</span>
-                    </p>
-                    <p class="c4"><span class="c6">Designed a quantum circuit for Elitzur and Vaidman Experiment,
-                            interaction-free
-                            measurement.</span></p>
-                </div>
-                <div class="Teaching text">
-                    <div class="title">Teaching</div>
-                    <p class="c4"><span class="c6">&nbsp; &nbsp;Teaching Assistant, Paleontology laboratory; 3rd year
-                            course (11
-                            Students)</span></p>
-                    <p class="c4"><span class="c6">&nbsp; &nbsp;Teaching Assistant, Earth System Processes; 1st year
-                            course (200
-                            students)</span></p>
-                    <p class="c4"><span class="c6">&nbsp; &nbsp;Teaching Assistant, Earth and Planetary Sciences; 1st
-                            year course (200
-                            students)</span></p>
-                </div>
-                <div class="Fieldwork text">
-                    <div class="title">Field work</div>
-                    <p class="c4"><span class="c6">Paleontology and Stratigraphy fieldwork, West Coast of India </span>
-                    </p>
-                    <ul class="c11 lst-kix_lmyh5h5t6w8i-0 start">
-                        <li class="c4 c10 li-bullet-0"><span class="c6">Images Coral, bivalves </span></li>
-                    </ul>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4"><span class="c6">Structural Geology Fieldwork</span></p>
-                    <ul class="c11 lst-kix_f752dls82kkb-0 start">
-                        <li class="c4 c10 li-bullet-0"><span class="c6">Images </span></li>
-                    </ul>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                </div>
-                <div class="Outreach text">
-                    <div class="title">Outreach</div>
-                    <p class="c4"><span class="c6">25th Kalyani Book Fair (03-12-21 to 14-12-21) &nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    </p>
-                    <p class="c4"><span class="c6">Indian National Exhibition Cum Fair 2022, Patuli (04-08-22 to
-                            08-08-22) &nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    </p>
-                    <p class="c4"><span class="c6">21st National Space Science Symposium (NSSS),Science City, Kolkata
-                            (6-12-22 to
-                            11-12-22) &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;National Science Day
-                            (28-2-23)
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-                </div>
-                <div class="Caving text>
-                     <div class="title"> Caving </div>
-                <div class="Contact text">
-                    <div class="title">Contact</div>
-                    <p class="c4"><span class="c9"><a class="c7"
-                                href="mailto:ankitraj18ms210@iiserkol.ac.in">ankitraj18ms210@iiserkol.ac.in</a></span>
-                    </p>
-                    <p class="c4"><span class="c9"><a class="c7"
-                                href="mailto:ar18ms210@iiserkol.ac.in">ar18ms210@iiserkol.ac.in</a></span></p>
-                    <p class="c4 c8"><span class="c6"></span></p>
-                    <p class="c4 c8"><span class="c6"></span></p>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </section>
 
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:ankit.raj@gatech.edu">ankit.raj@gatech.edu</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/ankit-raaz" target="_blank">github.com/ankit-raaz</a></p>
+                <p><strong>Affiliation:</strong> Spatial Ecology & Paleontology Lab<br>
+                School of Biological Sciences & School of Earth and Atmospheric Sciences<br>
+                Georgia Institute of Technology, Atlanta, GA</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ankit Raj. PhD Student at Georgia Tech.</p>
+        </div>
+    </footer>
+</body>
 </html>
