@@ -16,6 +16,7 @@
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#fieldwork">Fieldwork</a></li>
+                <li><a href="#caving">Caving</a></li>
                 <li><a href="#teaching">Teaching</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -114,11 +115,11 @@
                 <p class="field-focus">Pleistocene Mammals</p>
                 <div class="fieldwork-gallery">
                     <div class="field-img-wrap">
-                        <img src="./ntc-cave.jpg" alt="Descending into Natural Trap Cave" class="field-img">
+                        <img src="./Me repelling down into Natural trap cave.jpeg" alt="Descending into Natural Trap Cave" class="field-img">
                         <p class="img-caption">Descending into Natural Trap Cave</p>
                     </div>
                     <div class="field-img-wrap">
-                        <img src="./ntc-fossil.jpg" alt="First mammalian fossil discovery" class="field-img">
+                        <img src="./Me after finding my first mammalian teeth fossils.jpeg" alt="First mammalian fossil discovery" class="field-img">
                         <p class="img-caption">First mammalian fossil discovery</p>
                     </div>
                 </div>
@@ -134,7 +135,7 @@
                         <p class="img-caption">Fieldwork on the West Coast of India</p>
                     </div>
                     <div class="field-img-wrap">
-                        <img src="./gujarat-bivalve.jpg" alt="Bivalve fossil specimen" class="field-img">
+                        <img src="./bivalve2.jpg" alt="Bivalve fossil specimen" class="field-img">
                         <p class="img-caption">Marine bivalve fossil specimen</p>
                     </div>
                 </div>
@@ -151,6 +152,51 @@
                     </div>
                 </div>
                 <p>Geological fieldwork focused on petrological analysis and structural geological mapping in the Jharkhand region of India, examining rock fabric, deformation structures, and lithological variations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="caving">
+        <div class="container">
+            <h2>Caving</h2>
+
+            <div class="fieldwork-item">
+                <h3>Bighorn Cave, Wyoming</h3>
+                <div class="fieldwork-gallery">
+                    <div class="field-img-wrap">
+                        <img src="./Bighorncave1.jpg" alt="Bighorn Cave view 1" class="field-img">
+                    </div>
+                    <div class="field-img-wrap">
+                        <img src="./Bighorncave_2.jpg" alt="Bighorn Cave view 2" class="field-img">
+                    </div>
+                </div>
+                <p>Exploration and documentation of the Bighorn Cave system in Wyoming.</p>
+            </div>
+
+            <div class="fieldwork-item">
+                <h3>Signal Light Cave, Tennessee</h3>
+                <div class="fieldwork-gallery">
+                    <div class="field-img-wrap">
+                        <img src="./sg1.jpg" alt="Signal Light Cave view 1" class="field-img">
+                    </div>
+                    <div class="field-img-wrap">
+                        <img src="./sg2.jpg" alt="Signal Light Cave view 2" class="field-img">
+                    </div>
+                    <div class="field-img-wrap">
+                        <img src="./sg3.jpg" alt="Signal Light Cave view 3" class="field-img">
+                    </div>
+                </div>
+                <p>Technical caving in Signal Light Cave, Tennessee.</p>
+            </div>
+
+            <div class="fieldwork-item">
+                <h3>Kennamer Cave</h3>
+                <div class="fieldwork-gallery">
+                    <div class="field-img-wrap">
+                        <img src="./kc.jpg" alt="Kennamer Cave" class="field-img">
+                    </div>
+                </div>
+                <p>Surveying and exploring Kennamer Cave.</p>
             </div>
         </div>
     </section>
