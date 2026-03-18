@@ -36,45 +36,11 @@
             transition: all 0.3s ease;
             margin-top: 0.5rem;
         }
-        .back-btn:hover {
-            background: rgba(255,255,255,0.25);
-        }
-        .outreach-nav {
-            background: #1a3a2e;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .outreach-nav .site-name {
-            color: white;
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-        .outreach-nav .nav-links a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        .outreach-nav .nav-links a:hover {
-            color: white;
-        }
-        .outreach-section {
-            padding: 4rem 2rem;
-        }
-        .outreach-section:nth-child(even) {
-            background: #ffffff;
-        }
-        .outreach-section:nth-child(odd) {
-            background: #f7fafc;
-        }
-        .outreach-item {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .back-btn:hover { background: rgba(255,255,255,0.25); }
+        .outreach-section { padding: 4rem 2rem; }
+        .outreach-section:nth-child(even) { background: #ffffff; }
+        .outreach-section:nth-child(odd) { background: #f7fafc; }
+        .outreach-item { max-width: 1100px; margin: 0 auto; }
         .outreach-item h2 {
             font-size: 2rem;
             color: #1a3a2e;
@@ -86,10 +52,8 @@
         .outreach-item h2::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
+            bottom: 0; left: 0;
+            width: 50px; height: 3px;
             background: #2d9e5f;
             border-radius: 2px;
         }
@@ -111,15 +75,8 @@
             justify-content: center;
             margin: 1.5rem 0;
         }
-        .outreach-gallery-1 .outreach-img-wrap {
-            max-width: 480px;
-            width: 100%;
-        }
-        .outreach-img-wrap {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        .outreach-gallery-1 .outreach-img-wrap { max-width: 480px; width: 100%; }
+        .outreach-img-wrap { display: flex; flex-direction: column; align-items: center; }
         .outreach-img {
             width: 100%;
             max-height: 320px;
@@ -128,23 +85,9 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.12);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .outreach-img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
-        }
-        .img-caption {
-            text-align: center;
-            font-size: 0.88rem;
-            color: #718096;
-            font-style: italic;
-            margin-top: 0.5rem;
-        }
-        .outreach-desc {
-            color: #4a5568;
-            font-size: 1.05rem;
-            margin-top: 1rem;
-            line-height: 1.7;
-        }
+        .outreach-img:hover { transform: scale(1.02); box-shadow: 0 8px 25px rgba(0,0,0,0.18); }
+        .img-caption { text-align: center; font-size: 0.88rem; color: #718096; font-style: italic; margin-top: 0.5rem; }
+        .outreach-desc { color: #4a5568; font-size: 1.05rem; margin-top: 1rem; line-height: 1.7; }
         .outreach-dates {
             display: inline-block;
             background: #e8f5ee;
@@ -155,11 +98,7 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
-        .event-list {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0;
-        }
+        .event-list { list-style: none; padding: 0; margin: 1rem 0; }
         .event-list li {
             padding: 0.5rem 0;
             border-bottom: 1px solid #e2e8f0;
@@ -168,14 +107,8 @@
             align-items: baseline;
             gap: 0.5rem;
         }
-        .event-list li:last-child {
-            border-bottom: none;
-        }
-        .event-year {
-            font-weight: 700;
-            color: #1a3a2e;
-            min-width: 45px;
-        }
+        .event-list li:last-child { border-bottom: none; }
+        .event-year { font-weight: 700; color: #1a3a2e; min-width: 45px; }
         .outreach-footer {
             background: #1a3a2e;
             color: rgba(255,255,255,0.7);
@@ -203,13 +136,19 @@
     </style>
 </head>
 <body>
-    <nav class="outreach-nav">
-        <a href="./index.html" class="site-name">Ankit Raj</a>
-        <div class="nav-links">
-            <a href="./index.html#about">About</a>
-            <a href="./index.html#research">Research</a>
-            <a href="./index.html#fieldwork">Fieldwork</a>
-            <a href="./index.html#contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="site-title" style="text-decoration:none;">Ankit Raj</a>
+            <ul class="nav-menu">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#research">Research</a></li>
+                <li><a href="./index.html#fieldwork">Fieldwork</a></li>
+                <li><a href="./index.html#teaching">Teaching</a></li>
+                <li><a href="./outreach.html" style="color: var(--secondary-color);">Outreach</a></li>
+                <li><a href="./caving.html">Caving</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./cv.pdf" target="_blank" class="cv-btn">CV</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -222,15 +161,14 @@
     <section class="outreach-section">
         <div class="outreach-item">
             <h2>Rastriya Jharkhand Seva Sansthan</h2>
-            <p class="outreach-subtitle">Satgawan &mdash; A community-driven NGO helping underprivileged kids and youth in rural areas</p>
+            <p class="outreach-subtitle">Satgawan, Koderma &mdash; A community-driven NGO helping underprivileged kids and youth in rural areas</p>
             <span class="outreach-dates">2023 &ndash; Present</span>
             <div class="outreach-gallery-1">
                 <div class="outreach-img-wrap">
-                    <img src="./ngo.jpg" alt="Rastriya Jharkhand Seva Sansthan" class="outreach-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="img-pending" style="display:none;">Image coming soon &mdash; upload ngo.jpg</div>
+                    <img src="./ngo.jpg" alt="Rastriya Jharkhand Seva Sansthan" class="outreach-img" onerror="this.parentElement.innerHTML='<div class=img-pending>Image coming soon &mdash; upload ngo.jpg</div>'">
                 </div>
             </div>
-            <p class="outreach-desc">A volunteer at Rastriya Jharkhand Seva Sansthan, Satgawan &mdash; a community-driven NGO dedicated to helping underprivileged kids and youth in rural areas with guidance and support in their education and skill development.</p>
+            <p class="outreach-desc">A volunteer at Rastriya Jharkhand Seva Sansthan, Satgawan, Koderma &mdash; a community-driven NGO dedicated to helping underprivileged kids and youth in rural areas with guidance and support in their education and skill development.</p>
         </div>
     </section>
 
@@ -242,13 +180,15 @@
             <div class="outreach-gallery-3">
                 <div class="outreach-img-wrap">
                     <img src="./ep1.jpg" alt="Ek Pehal outreach event" class="outreach-img">
+                    <span class="img-caption">Ek Pehal outreach event</span>
                 </div>
                 <div class="outreach-img-wrap">
                     <img src="./ep2.jpg" alt="Ek Pehal annual day celebration" class="outreach-img">
-                    <p class="img-caption">Annual Day Celebration</p>
+                    <span class="img-caption">Annual Day Celebration</span>
                 </div>
                 <div class="outreach-img-wrap">
                     <img src="./ep3.jpg" alt="Ek Pehal outreach event" class="outreach-img">
+                    <span class="img-caption">Ek Pehal outreach event</span>
                 </div>
             </div>
             <p class="outreach-desc">Member at Ek Pehal, a community-driven initiative dedicated to educating children in rural areas surrounding IISER Kolkata. Organized and participated in multiple outreach events, bringing science and learning opportunities to underserved communities.</p>
@@ -260,25 +200,16 @@
             <h2>Science Exhibitions &amp; Outreach Committee</h2>
             <p class="outreach-subtitle">Department of Earth Sciences (DES), IISER Kolkata</p>
             <ul class="event-list">
-                <li>
-                    <span class="event-year">2024</span>
-                    <span>25th National Science Exhibition, Kolkata, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</span>
-                </li>
-                <li>
-                    <span class="event-year">2023</span>
-                    <span>9th Indian National Exhibition cum-Fair, Kolkata, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</span>
-                </li>
-                <li>
-                    <span class="event-year">2022</span>
-                    <span>Kalyani Science Fair, Kalyani, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</span>
-                </li>
+                <li><span class="event-year">2024</span> 25th National Science Exhibition, Kolkata, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</li>
+                <li><span class="event-year">2023</span> 9th Indian National Exhibition cum-Fair, Kolkata, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</li>
+                <li><span class="event-year">2022</span> Kalyani Science Fair, Kalyani, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</li>
             </ul>
             <p class="outreach-desc">Active member of the outreach committee of the Department of Earth Sciences at IISER Kolkata. Represented the department at national and local science exhibitions, engaging with students, educators, and the general public to communicate current research in Earth Sciences.</p>
         </div>
     </section>
 
     <footer class="outreach-footer">
-        <p>&copy; 2026 Ankit Raj. PhD Student at Georgia Tech.</p>
+        &copy; 2026 Ankit Raj. PhD Student at Georgia Tech.
     </footer>
 </body>
 </html>
