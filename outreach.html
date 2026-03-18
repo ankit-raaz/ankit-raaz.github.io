@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outreach - Ankit Raj</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .outreach-hero {
+            background: linear-gradient(135deg, #1a3a2e 0%, #1e4d3a 50%, #0f5c3a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .outreach-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .outreach-hero p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 650px;
+            margin: 0 auto 1.5rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 0.6rem 1.4rem;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        .back-btn:hover {
+            background: rgba(255,255,255,0.25);
+        }
+        .outreach-nav {
+            background: #1a3a2e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .outreach-nav .site-name {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .outreach-nav .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .outreach-nav .nav-links a:hover {
+            color: white;
+        }
+        .outreach-section {
+            padding: 4rem 2rem;
+        }
+        .outreach-section:nth-child(even) {
+            background: #ffffff;
+        }
+        .outreach-section:nth-child(odd) {
+            background: #f7fafc;
+        }
+        .outreach-item {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .outreach-item h2 {
+            font-size: 2rem;
+            color: #1a3a2e;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+        .outreach-item h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #2d9e5f;
+            border-radius: 2px;
+        }
+        .outreach-subtitle {
+            font-style: italic;
+            color: #2d9e5f;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .outreach-gallery-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .outreach-img-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .outreach-img {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .outreach-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+        }
+        .img-caption {
+            text-align: center;
+            font-size: 0.88rem;
+            color: #718096;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        .outreach-desc {
+            color: #4a5568;
+            font-size: 1.05rem;
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+        .outreach-dates {
+            display: inline-block;
+            background: #e8f5ee;
+            color: #1a3a2e;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .event-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .event-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            color: #4a5568;
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+        .event-list li:last-child {
+            border-bottom: none;
+        }
+        .event-year {
+            font-weight: 700;
+            color: #1a3a2e;
+            min-width: 45px;
+        }
+        .outreach-footer {
+            background: #1a3a2e;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .img-placeholder {
+            width: 100%;
+            max-height: 320px;
+            min-height: 200px;
+            background: #e8f5ee;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d9e5f;
+            font-size: 0.9rem;
+            font-style: italic;
+            border: 2px dashed #2d9e5f;
+        }
+        @media (max-width: 768px) {
+            .outreach-gallery-3 { grid-template-columns: 1fr; }
+            .outreach-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="outreach-nav">
+        <a href="./index.html" class="site-name">Ankit Raj</a>
+        <div class="nav-links">
+            <a href="./index.html#about">About</a>
+            <a href="./index.html#research">Research</a>
+            <a href="./index.html#fieldwork">Fieldwork</a>
+            <a href="./index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="outreach-hero">
+        <h1>Outreach</h1>
+        <p>Science communication, community engagement, and education initiatives &mdash; connecting science with society.</p>
+        <a href="./index.html" class="back-btn">&larr; Back to Main Site</a>
+    </div>
+
+    <section class="outreach-section">
+        <div class="outreach-item">
+            <h2>Ek Pehal</h2>
+            <p class="outreach-subtitle">An initiative to help educate kids in rural areas surrounding IISER Kolkata</p>
+            <span class="outreach-dates">2020 &ndash; 2023</span>
+            <div class="outreach-gallery-3">
+                <div class="outreach-img-wrap">
+                    <div class="img-placeholder">ep1.jpg &mdash; coming soon</div>
+                    <p class="img-caption">Ek Pehal outreach event</p>
+                </div>
+                <div class="outreach-img-wrap">
+                    <div class="img-placeholder">ep2.jpg &mdash; coming soon</div>
+                    <p class="img-caption">Ek Pehal outreach event</p>
+                </div>
+                <div class="outreach-img-wrap">
+                    <div class="img-placeholder">ep3.jpg &mdash; coming soon</div>
+                    <p class="img-caption">Ek Pehal outreach event</p>
+                </div>
+            </div>
+            <p class="outreach-desc">Member at Ek Pehal, a community-driven initiative dedicated to educating children in rural areas surrounding IISER Kolkata. Organized and participated in multiple outreach events, bringing science and learning opportunities to underserved communities.</p>
+        </div>
+    </section>
+
+    <section class="outreach-section">
+        <div class="outreach-item">
+            <h2>Science Exhibitions &amp; Outreach Committee</h2>
+            <p class="outreach-subtitle">Department of Earth Sciences (DES), IISER Kolkata</p>
+            <ul class="event-list">
+                <li>
+                    <span class="event-year">2024</span>
+                    <span>25th National Science Exhibition, Kolkata, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</span>
+                </li>
+                <li>
+                    <span class="event-year">2023</span>
+                    <span>9th Indian National Exhibition cum-Fair, Kolkata, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</span>
+                </li>
+                <li>
+                    <span class="event-year">2022</span>
+                    <span>Kalyani Science Fair, Kalyani, India &mdash; Member of Outreach Committee, Department of Earth Sciences (DES), IISER Kolkata</span>
+                </li>
+            </ul>
+            <p class="outreach-desc">Active member of the outreach committee of the Department of Earth Sciences at IISER Kolkata. Represented the department at national and local science exhibitions, engaging with students, educators, and the general public to communicate current research in Earth Sciences.</p>
+        </div>
+    </section>
+
+    <footer class="outreach-footer">
+        <p>&copy; 2026 Ankit Raj. PhD Student at Georgia Tech.</p>
+    </footer>
+</body>
+</html>
