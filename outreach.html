@@ -183,6 +183,19 @@
             padding: 1.5rem;
             font-size: 0.9rem;
         }
+        .img-pending {
+            width: 100%;
+            min-height: 200px;
+            background: #e8f5ee;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2d9e5f;
+            font-size: 0.95rem;
+            font-style: italic;
+            border: 2px dashed #2d9e5f;
+        }
         @media (max-width: 768px) {
             .outreach-gallery-3 { grid-template-columns: 1fr; }
             .outreach-hero h1 { font-size: 2rem; }
@@ -208,6 +221,21 @@
 
     <section class="outreach-section">
         <div class="outreach-item">
+            <h2>Rastriya Jharkhand Seva Sansthan</h2>
+            <p class="outreach-subtitle">Satgawan &mdash; A community-driven NGO helping underprivileged kids and youth in rural areas</p>
+            <span class="outreach-dates">2023 &ndash; Present</span>
+            <div class="outreach-gallery-1">
+                <div class="outreach-img-wrap">
+                    <img src="./ngo.jpg" alt="Rastriya Jharkhand Seva Sansthan" class="outreach-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-pending" style="display:none;">Image coming soon &mdash; upload ngo.jpg</div>
+                </div>
+            </div>
+            <p class="outreach-desc">A volunteer at Rastriya Jharkhand Seva Sansthan, Satgawan &mdash; a community-driven NGO dedicated to helping underprivileged kids and youth in rural areas with guidance and support in their education and skill development.</p>
+        </div>
+    </section>
+
+    <section class="outreach-section">
+        <div class="outreach-item">
             <h2>Ek Pehal</h2>
             <p class="outreach-subtitle">An initiative to help educate kids in rural areas surrounding IISER Kolkata</p>
             <span class="outreach-dates">2018 &ndash; 2023</span>
@@ -224,20 +252,6 @@
                 </div>
             </div>
             <p class="outreach-desc">Member at Ek Pehal, a community-driven initiative dedicated to educating children in rural areas surrounding IISER Kolkata. Organized and participated in multiple outreach events, bringing science and learning opportunities to underserved communities.</p>
-        </div>
-    </section>
-
-    <section class="outreach-section">
-        <div class="outreach-item">
-            <h2>Rastriya Jharkhand Seva Sansthan</h2>
-            <p class="outreach-subtitle">Satgawan &mdash; A community-driven NGO helping underprivileged kids and youth in rural areas</p>
-            <span class="outreach-dates">2023 &ndash; Present</span>
-            <div class="outreach-gallery-1">
-                <div class="outreach-img-wrap">
-                    <img src="./ngo.jpg" alt="Rastriya Jharkhand Seva Sansthan" class="outreach-img">
-                </div>
-            </div>
-            <p class="outreach-desc">A volunteer at Rastriya Jharkhand Seva Sansthan, Satgawan &mdash; a community-driven NGO dedicated to helping underprivileged kids and youth in rural areas with guidance and support in their education and skill development.</p>
         </div>
     </section>
 
