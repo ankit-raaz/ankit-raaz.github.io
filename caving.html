@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caving - Ankit Raj</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .caving-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .caving-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .caving-hero p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 650px;
+            margin: 0 auto 1.5rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 0.6rem 1.4rem;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        .back-btn:hover {
+            background: rgba(255,255,255,0.25);
+        }
+        .caving-section {
+            padding: 4rem 2rem;
+        }
+        .caving-section:nth-child(even) {
+            background: #ffffff;
+        }
+        .caving-section:nth-child(odd) {
+            background: #f7fafc;
+        }
+        .cave-item {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .cave-item h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+        .cave-item h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #e2725b;
+            border-radius: 2px;
+        }
+        .cave-location {
+            font-style: italic;
+            color: #4a90e2;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .cave-gallery-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .cave-gallery-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .cave-gallery-single {
+            display: flex;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+        .cave-gallery-single .cave-img-wrap {
+            max-width: 420px;
+            width: 100%;
+        }
+        .cave-img-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        .cave-img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #e2e8f0;
+        }
+        .cave-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+        }
+        .img-caption {
+            text-align: center;
+            font-size: 0.88rem;
+            color: #718096;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        .cave-desc {
+            color: #4a5568;
+            font-size: 1.05rem;
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+        .caving-nav {
+            background: #1a1a2e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .caving-nav .site-name {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .caving-nav .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .caving-nav .nav-links a:hover {
+            color: white;
+        }
+        .caving-footer {
+            background: #1a1a2e;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .cave-gallery-2, .cave-gallery-3 { grid-template-columns: 1fr; }
+            .caving-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="caving-nav">
+        <a href="./index.html" class="site-name">Ankit Raj</a>
+        <div class="nav-links">
+            <a href="./index.html#about">About</a>
+            <a href="./index.html#research">Research</a>
+            <a href="./index.html#fieldwork">Fieldwork</a>
+            <a href="./index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="caving-hero">
+        <h1>Caving</h1>
+        <p>Underground exploration as a hobby &mdash; documenting cave systems across the American Southeast and beyond.</p>
+        <a href="./index.html" class="back-btn">&larr; Back to Main Site</a>
+    </div>
+
+    <!-- Bighorn Cave, Wyoming -->
+    <section class="caving-section">
+        <div class="cave-item">
+            <h2>Bighorn Cave, Wyoming</h2>
+            <p class="cave-location">Wyoming, USA</p>
+            <div class="cave-gallery-2">
+                <div class="cave-img-wrap">
+                    <img src="./Caving/bighorn1.jpg" alt="Bighorn Cave view 1" class="cave-img">
+                    <p class="img-caption">Bighorn Cave &mdash; view 1</p>
+                </div>
+                <div class="cave-img-wrap">
+                    <img src="./Caving/bighorn2.jpg" alt="Bighorn Cave view 2" class="cave-img">
+                    <p class="img-caption">Bighorn Cave &mdash; view 2</p>
+                </div>
+            </div>
+            <p class="cave-desc">Exploration and documentation of the Bighorn Cave system in Wyoming.</p>
+        </div>
+    </section>
+
+    <!-- Signal Light Cave, Tennessee -->
+    <section class="caving-section">
+        <div class="cave-item">
+            <h2>Signal Light Cave, Tennessee</h2>
+            <p class="cave-location">Tennessee, USA</p>
+            <div class="cave-gallery-3">
+                <div class="cave-img-wrap">
+                    <img src="./Caving/signallight1.jpg" alt="Signal Light Cave view 1" class="cave-img">
+                    <p class="img-caption">Signal Light Cave &mdash; view 1</p>
+                </div>
+                <div class="cave-img-wrap">
+                    <img src="./Caving/signallight2.jpg" alt="Signal Light Cave view 2" class="cave-img">
+                    <p class="img-caption">Signal Light Cave &mdash; view 2</p>
+                </div>
+                <div class="cave-img-wrap">
+                    <img src="./Caving/signallight3.jpg" alt="Signal Light Cave view 3" class="cave-img">
+                    <p class="img-caption">Signal Light Cave &mdash; view 3</p>
+                </div>
+            </div>
+            <p class="cave-desc">Technical caving in Signal Light Cave, Tennessee.</p>
+        </div>
+    </section>
+
+    <!-- Kennamer Cave -->
+    <section class="caving-section">
+        <div class="cave-item">
+            <h2>Kennamer Cave</h2>
+            <p class="cave-location">Alabama, USA</p>
+            <div class="cave-gallery-single">
+                <div class="cave-img-wrap">
+                    <img src="./Caving/kennamer.jpg" alt="Kennamer Cave" class="cave-img">
+                    <p class="img-caption">Kennamer Cave</p>
+                </div>
+            </div>
+            <p class="cave-desc">Surveying and exploring Kennamer Cave.</p>
+        </div>
+    </section>
+
+    <!-- Howard Cave -->
+    <section class="caving-section">
+        <div class="cave-item">
+            <h2>Howard Cave</h2>
+            <p class="cave-location">USA</p>
+            <div class="cave-gallery-2">
+                <div class="cave-img-wrap">
+                    <img src="./Caving/hc1.jpg" alt="Howard Cave view 1" class="cave-img">
+                    <p class="img-caption">Howard Cave &mdash; view 1</p>
+                </div>
+                <div class="cave-img-wrap">
+                    <img src="./Caving/hc2.jpg" alt="Howard Cave view 2" class="cave-img">
+                    <p class="img-caption">Howard Cave &mdash; view 2</p>
+                </div>
+            </div>
+            <p class="cave-desc">Exploration of Howard Cave.</p>
+        </div>
+    </section>
+
+    <footer class="caving-footer">
+        <p>&copy; 2026 Ankit Raj &mdash; Instructor in Training, Outdoor Recreation Georgia Tech &mdash; Caving</p>
+    </footer>
+
+</body>
+</html>
