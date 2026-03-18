@@ -36,22 +36,11 @@
             transition: all 0.3s ease;
             margin-top: 0.5rem;
         }
-        .back-btn:hover {
-            background: rgba(255,255,255,0.25);
-        }
-        .caving-section {
-            padding: 4rem 2rem;
-        }
-        .caving-section:nth-child(even) {
-            background: #ffffff;
-        }
-        .caving-section:nth-child(odd) {
-            background: #f7fafc;
-        }
-        .cave-item {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .back-btn:hover { background: rgba(255,255,255,0.25); }
+        .caving-section { padding: 4rem 2rem; }
+        .caving-section:nth-child(even) { background: #ffffff; }
+        .caving-section:nth-child(odd) { background: #f7fafc; }
+        .cave-item { max-width: 1100px; margin: 0 auto; }
         .cave-item h2 {
             font-size: 2rem;
             color: #1a1a2e;
@@ -63,10 +52,8 @@
         .cave-item h2::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
+            bottom: 0; left: 0;
+            width: 50px; height: 3px;
             background: #e2725b;
             border-radius: 2px;
         }
@@ -88,15 +75,8 @@
             justify-content: center;
             margin: 1.5rem 0;
         }
-        .cave-gallery-single .cave-img-wrap {
-            max-width: 420px;
-            width: 100%;
-        }
-        .cave-img-wrap {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        .cave-gallery-single .cave-img-wrap { max-width: 420px; width: 100%; }
+        .cave-img-wrap { display: flex; flex-direction: column; align-items: center; }
         .cave-img {
             width: 100%;
             max-height: 480px;
@@ -106,33 +86,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             background: #1a1a2e;
         }
-        .cave-img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
-        }
-        .caving-nav {
-            background: #1a1a2e;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .caving-nav .site-name {
-            color: white;
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-        .caving-nav .nav-links a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        .caving-nav .nav-links a:hover {
-            color: white;
-        }
+        .cave-img:hover { transform: scale(1.02); box-shadow: 0 8px 25px rgba(0,0,0,0.18); }
         .caving-footer {
             background: #1a1a2e;
             color: rgba(255,255,255,0.7);
@@ -147,13 +101,19 @@
     </style>
 </head>
 <body>
-    <nav class="caving-nav">
-        <a href="./index.html" class="site-name">Ankit Raj</a>
-        <div class="nav-links">
-            <a href="./index.html#about">About</a>
-            <a href="./index.html#research">Research</a>
-            <a href="./index.html#fieldwork">Fieldwork</a>
-            <a href="./index.html#contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="site-title" style="text-decoration:none;">Ankit Raj</a>
+            <ul class="nav-menu">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#research">Research</a></li>
+                <li><a href="./index.html#fieldwork">Fieldwork</a></li>
+                <li><a href="./index.html#teaching">Teaching</a></li>
+                <li><a href="./outreach.html">Outreach</a></li>
+                <li><a href="./caving.html" style="color: var(--secondary-color);">Caving</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./cv.pdf" target="_blank" class="cv-btn">CV</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -172,7 +132,7 @@
                     <img src="./bighorn1.jpg" alt="Bighorn Cave view 1" class="cave-img">
                 </div>
                 <div class="cave-img-wrap">
-                    <img src="./bighorn2.jpg" alt="Bighorn Cave view 2" class="cave-img" style="object-fit: cover;">
+                    <img src="./bighorn2.jpg" alt="Bighorn Cave view 2" class="cave-img">
                 </div>
             </div>
         </div>
@@ -221,7 +181,7 @@
     </section>
 
     <footer class="caving-footer">
-        <p>&copy; 2026 Ankit Raj &mdash; Instructor in Training, Outdoor Recreation Georgia Tech &mdash; Caving</p>
+        &copy; 2026 Ankit Raj &mdash; Instructor in Training, Outdoor Recreation Georgia Tech &mdash; Caving
     </footer>
 </body>
 </html>
