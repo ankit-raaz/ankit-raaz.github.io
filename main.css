@@ -426,4 +426,18 @@ footer p {
     transform: scale(1.05);
     box-shadow: var(--shadow-lg);
 }
+
+    .field-img-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
 }
