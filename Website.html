@@ -2,6 +2,172 @@
 
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+            /* ===== MOBILE-RESPONSIVE OVERRIDES ===== */
+
+            /* Make main container responsive */
+            .c13 {
+                max-width: 100% !important;
+                padding: 16px !important;
+                box-sizing: border-box !important;
+            }
+
+            /* ===== STICKY NAVIGATION BAR ===== */
+            .site-nav {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background: #2c3e50;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+                min-height: 52px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                flex-wrap: wrap;
+            }
+            .site-nav .nav-brand {
+                color: #fff;
+                font-weight: 700;
+                font-size: 15px;
+                font-family: Arial, sans-serif;
+                text-decoration: none;
+                padding: 12px 0;
+            }
+            .nav-toggle {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 8px;
+            }
+            .nav-toggle span {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background: #fff;
+                border-radius: 2px;
+                transition: all 0.3s;
+            }
+            .nav-links {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                gap: 4px;
+                align-items: center;
+            }
+            .nav-links li a {
+                color: #dde;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                padding: 8px 12px;
+                display: block;
+                border-radius: 4px;
+                transition: background 0.2s;
+                white-space: nowrap;
+            }
+            .nav-links li a:hover {
+                background: #3d566e;
+                color: #fff;
+            }
+
+            @media (max-width: 700px) {
+                .nav-toggle {
+                    display: flex;
+                }
+                .nav-links {
+                    display: none;
+                    flex-direction: column;
+                    width: 100%;
+                    background: #2c3e50;
+                    padding: 8px 0;
+                    gap: 0;
+                }
+                .nav-links.open {
+                    display: flex;
+                }
+                .nav-links li a {
+                    padding: 12px 20px;
+                    border-radius: 0;
+                    border-bottom: 1px solid #3d566e;
+                }
+                .site-nav {
+                    flex-wrap: wrap;
+                }
+                .c13 {
+                    padding: 12px !important;
+                }
+            }
+
+            /* ===== EXPLORE SECTION BOXES ===== */
+            .explore-section {
+                margin-top: 40px;
+                padding-top: 30px;
+                border-top: 2px solid #ddd;
+            }
+            .explore-title {
+                font-size: 18pt;
+                color: #2c3e50;
+                margin-bottom: 20px;
+                font-family: Arial, sans-serif;
+            }
+            .explore-boxes {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .explore-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                background: #f5f7fa;
+                border: 2px solid #dce3ec;
+                border-radius: 10px;
+                padding: 24px 32px;
+                min-width: 160px;
+                flex: 1;
+                max-width: 280px;
+                transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+                text-align: center;
+            }
+            .explore-box:hover {
+                box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+                border-color: #2c3e50;
+                background: #eaf0f8;
+            }
+            .explore-box-icon {
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+            .explore-box-label {
+                font-weight: 700;
+                font-size: 15px;
+                color: #2c3e50;
+                font-family: Arial, sans-serif;
+                margin-bottom: 6px;
+            }
+            .explore-box-desc {
+                font-size: 12px;
+                color: #666;
+                font-family: Arial, sans-serif;
+                line-height: 1.4;
+            }
+            @media (max-width: 500px) {
+                .explore-boxes {
+                    flex-direction: column;
+                }
+                .explore-box {
+                    max-width: 100%;
+                }
+            }
+        </style>
     <style type="text/css">
         @import url(https://themes.googleusercontent.com/fonts/css?kit=r3oQQBWBLofdqMg7XagtpsGCWkzfd11qdWUR0ld0L_E);
 
@@ -607,6 +773,21 @@
 </head>
 
 <body class="c13 doc-content">
+    <nav class="site-nav">
+        <a href="#" class="nav-brand">Spatial Ecology &amp; Paleo Lab</a>
+        <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#fieldwork">Fieldwork</a></li>
+            <li><a href="outreach.html">Outreach</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="caving.html">Caving</a></li>
+        </ul>
+    </nav>
     <p class="c4"><span class="c2"> Spatial Ecology and Paleontology Lab </span></p>
     <p class="c4"><span class="c2">Georgia Institute of Technology</span></p>
     <p class="c4 c8"><span class="c2"></span></p>
@@ -737,6 +918,33 @@
     <p class="c4"><span class="c6">Batch Topper 2014</span></p>
     <p class="c4 c8"><span class="c6"></span></p>
     <p class="c4 c8"><span class="c6"></span></p>
+
+            <!-- Explore More Section -->
+        <div class="explore-section">
+          <h2 class="explore-title">Explore More</h2>
+          <div class="explore-boxes">
+            <a href="caving.html" class="explore-box">
+              <div class="explore-box-icon">&#9968;</div>
+              <div class="explore-box-label">Caving</div>
+              <div class="explore-box-desc">Caves I have explored &amp; what I found</div>
+            </a>
+            <a href="outreach.html" class="explore-box">
+              <div class="explore-box-icon">&#127760;</div>
+              <div class="explore-box-label">Outreach</div>
+              <div class="explore-box-desc">Science communication &amp; public events</div>
+            </a>
+          </div>
+
+                <script>
+        // Hamburger menu close on link click
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var nl = document.querySelector('.nav-links');
+                if (nl) nl.classList.remove('open');
+            });
+        });
+    </script>
+        </div>
 </body>
 
 </html>
