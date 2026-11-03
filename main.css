@@ -494,3 +494,25 @@ footer p {
     .navbar.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
     .navbar.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 }
+
+/* Beyond research */
+.beyond-content {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.beyond-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: 70% 30%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: block;
+}
+.beyond-content p { margin-bottom: 0.8rem; line-height: 1.7; }
+.beyond-content a { color: var(--secondary-color); font-weight: 600; text-decoration: none; }
+@media (max-width: 640px) {
+    .beyond-content { grid-template-columns: 1fr; gap: 1rem; }
+}
