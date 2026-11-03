@@ -11,7 +11,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <h1 class="site-title">Ankit Raj</h1>
-            <ul class="nav-menu">
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="site-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#fieldwork">Fieldwork</a></li>
@@ -266,5 +267,24 @@
     <footer>
         <p>&copy; 2026 Ankit Raj. PhD Candidate at Georgia Tech.</p>
     </footer>
+    <script>
+    (function () {
+        var nav = document.querySelector('.navbar');
+        var btn = document.querySelector('.nav-toggle');
+        if (!nav || !btn) return;
+        btn.addEventListener('click', function () {
+            var open = nav.classList.toggle('nav-open');
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        });
+        document.querySelectorAll('.nav-menu a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                nav.classList.remove('nav-open');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-label', 'Open menu');
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
